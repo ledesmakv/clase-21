@@ -1,0 +1,71 @@
+.div-con-background-image {
+    background-image: url("https://placekitten.com/300/200");
+    width: 300px;
+    height: 200px;
+}
+
+.background-repeat-default {
+    width: 350px;
+    height: 250px;
+    background-image: url("https://placekitten.com/100/100");
+}
+
+.background-repeat-x {
+    width: 350px;
+    height: 250px;
+    background-image: url("https://placekitten.com/100/100");
+    background-repeat: repeat-x;
+    border: 2px solid red
+}
+
+.background-repeat-y {
+    width: 350px;
+    height: 250px;
+    background-image: url("https://placekitten.com/100/100");
+    background-repeat: repeat-y;
+    border: 2px solid red
+}
+
+.background-no-repeat {
+    width: 350px;
+    height: 250px;
+    background-image: url("https://placekitten.com/100/100");
+    background-repeat: no-repeat;
+    border: 2px solid red
+}
+
+.background-position {
+    width: 350px;
+    height: 250px;
+    background-image: url("https://placekitten.com/100/100");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    border: 2px solid red
+}
+
+.background-size {
+    width: 350px;
+    height: 250px;
+    background-image: url("https://placekitten.com/100/100");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    border: 2px solid red
+}
+
+.flex-con-divs {
+    display: flex;
+}
+
+.flex-con-divs div {
+    width: 150px;
+    height: 150px;
+    background-image: url("https://placekitten.com/300/200");
+    background-position: center;
+    background-size: cover;
+}
+
+.fondos-combinados {
+    background-image: url("https://www.timberlineknolls.com/wp-content/uploads/sites/104/2017/05/TimberlineKnolls-SCHEMA-50x50.png"), url("https://img.freepik.com/free-vector/blue-comic-background-with-lines-halftone_1017-11432.jpg?size=338&ext=jpg");
+    width: 350px;
+    height: 350px;
+}

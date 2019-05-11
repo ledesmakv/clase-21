@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        Podemos cargar una imagen desde el HTML, con el tag img o desde el css con la propiedad background-image
+
+        <br>
+        HTML: 
+        <br/>
+        <img src="https://placekitten.com/300/200">
+
+        <br/>
+        CSS:
+        <br/>
+        <div class="div-con-background-image">
+        </div>
+
+        <br>
+        En general, se prefiere usar el tag desde el HTML.
+        <br>
+        1. Accesibilidad: permite que usuarios que usan un lector de imagenes sepan que alli hay una imagen, y lean su contenido mediante la etiqueta "alt"
+        <br>
+        2. SEO: Los motores de busqueda encuentran estas imagenes, y aparecen si el usuario las busca. 
+        <br>
+        3. Velocidad de carga: El CSS debe cargar entero (incluidas las imagenes) antes de que la web empiece siquiera a mostrarse. En cambio, si la imagen esta en el HTML, la web se carga y solo despues comienzan a cargarse las imagenes. 
+        <br>
+        <br>
+        Pero al utilizar una imagen con background-image tenemos muchas posibilidades de edicion. 
+
+        <br>
+
+        <ul>
+        <li>  background-image</li>
+        <li>  background-repeat</li>
+        <li>  background-attachment</li>
+        <li>  background-position</li>
+        </ul>
+
+        <br/>
+        <li>  background-image</li>
+        Como vimos mas arriba. 
+
+        <br/><br/><br/><br/><br/>
+
+        <li>  background-repeat</li>
+        Por default, si el div es mas grande que la imagen, la imagen se repetira tanto horizontal como verticalmente. 
+        <br/>
+        Este div tiene 200px x 300px, pero la imagen tiene 100px:
+
+        <div class="background-repeat-default"></div>
+
+        <br/>
+
+        La propiedad background-repeat nos permite especificar en que eje queremos que se repita la imagen
+        <br/>
+        Horizontal, con repeat-x:
+        <div class="background-repeat-x"></div>
+
+        <br/>
+        Vertical, con repeat-y:
+        <div class="background-repeat-y"></div>
+
+        <br/>
+        O ninguno, con no-repeat
+        <div class="background-no-repeat"></div>
+
+        </br></br></br>
+
+        En ese ultimo caso, podemos usar background-position para acomodar la imagen dentro del div. 
+
+        <br/>
+
+        <div class="background-position"></div>
+
+        <br/>
+        Podemos ver todas las posibilidades aqui: <a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-position">https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-position</a>
+
+
+        <br/><br/><br/><br/><br/><br/>
+        Podemos ajustar el tamaño del fondo con background-size
+
+        <div class="background-size"></div>
+
+        <br/>
+        Podemos ver todas las posibilidades aqui: <a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size">https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover</a>
+        <br/><br/><br/><br/>
+
+
+        Background-position: center y size: cover se llevan particularmente bien con flex.
+
+
+        <div class="flex-con-divs">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        
+        </div>
+
+        <br/><br/><br/><br/>
+
+        Extra: Podemos combinar dos imagenes en el mismo fondo (que quede bien es otra cosa...)
+        <br/>
+        <div class="fondos-combinados">
+        </div>
+    </body>
+</html>
